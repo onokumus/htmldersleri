@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- gerekli meta tagları başlangıç -->
+  <meta charset="utf-8">
+  <meta name="author" content="Ali Gel">
+  <!-- gerekli meta tagları bitiş -->
+
+  <!-- opsiyonel meta tagları başlangıç -->
+  <meta name="description" content="Lezzet Durağı Web Sitesi">
+  <meta name="keywords" content="yemek, lezzet, tatlı, temiz, güleryüz">
+  <!-- opsiyonel meta tagları bitiş -->
+
+  <title>Lezzet Durağı</title>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="assets/img/logo.png" alt="Lezzet Durağı">
+    </a>
+  </header>
+
+  <nav>
+    <a href="blog/yazi.html">İlk Yazı</a>
+  </nav>
+
+  <!-- banner başlanıcı -->
+  <section>
+    <div>
+      <h1>Lezzet Durağı</h1>
+      <p>1870 den beri doğal lezzetler</p>
+    </div>
+  </section>
+  <!-- banner bitişi -->
+
+  <!-- yemeklerimiz başlangıç -->
+<section>
+  <h2>Tarhana Çorbası</h2>
+  <figure>
+    <img src="assets/img/y2.jpg" width=450 height=300 alt="Tarhana Çorbası">
+    <figcaption>Resim 1 : Tarhana Çorbası</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Kuzu Kebap</h2>
+  <figure>
+    <img src="assets/img/y1.jpg" width=450 height=300 alt="Kuzu Kebap">
+    <figcaption>Resim 2 : Kuzu Kebap</figcaption>
+  </figure>
+</section>
+  <!-- yemeklerimiz bitiş -->
+
+<!-- sipariş başlangıç -->
+<h3>Sipariş Verin</h3>
+<form action="index.html" method="post">
+  <input type="text" name="isim" placeholder="Buraya İsminizi Giriniz">
+  <input type="number" name="tel" placeholder="Telefon Numaranızı Giriniz">
+
+<br>
+<br>
+  Tarhana Çorbası <input type="checkbox" name="corba" value="tarhana">
+  Kuzu Kebap <input type="checkbox" name="sicak" value="kuzu" checked>
+
+  <br><br>
+
+  Ayran Olsun mu?
+<br>
+  <input type="radio" name="ayran" value="evet" checked>Evet
+  <br>
+  <input type="radio" name="ayran" value="hayir">Hayır
+
+  <br>
+  <br>
+  <textarea name="mesaj" rows="8" cols="80">
+Özel İstekleriniz
+  </textarea>
+  <button type="submit" name="button">SİPARİŞ VER</button>
+  <button type="reset" name="button">SİPARİŞİ SİL</button>
+</form>
+<br><br><br>
+<!-- sipariş bitiş -->
+
+  <footer>
+    Copyright &copy; 2017 Lezzet Durağı. Her hakkı mahfuzdur.
+  </footer>
+
+</body>
+
+</html>
