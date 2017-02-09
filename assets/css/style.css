@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea {
+  border-radius: 0;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+[type="text"],
+[type="number"],
+textarea {
+  width: 100%;
+}
+
+.button {
+  border-width: 0;
+  background-color: gray;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.kapsayici {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* site navigasyon menüsü */
+.site-nav {
+  background: #0d4250;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+}
+
+.site-nav a.secili {
+  background: #125466;
+}
+
+/* Banner */
+.banner {
+  padding: 30px 0;
+  background-color: #125466;
+  color: #fff;
+  text-align: center;
+}
+.banner-baslik {
+  font-size: 80px;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.banner-slogan {
+  font-style: italic;
+  font-size: 20px;
+}
+
+/*Yemekler*/
+
+.yemekler {
+  padding: 40px 0;
+  background: #fafafa;
+  border-bottom: 1px solid #ddd;
+}
+
+.yemek {
+  float: left;
+  width: 49%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.yemek figure {
+  margin: 0;
+}
+
+.yemek + .yemek {
+  margin-left: 2%;
+}
+
+/* Sipariş */
+.siparis {
+  padding: 30px 0;
+  color: #666;
+}
+
+.siparis-baslik {
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-bolumu {
+  margin-bottom: 15px;
+}
+.form-sol {
+  width: 40%;
+  float: left;
+}
+.form-sag {
+  width: 60%;
+  float: left;
+}
+
+.saga-dayali {
+  text-align: right;
+}
+.form-sol label {
+  padding-right: 15px;
+}
+.siparis-button {
+  background: crimson;
+}
+
+/*Site Sonu*/
+.site-sonu {
+  padding: 20px 0;
+  color: #777;
+  background-color: #444;
+  text-align: center;
+  font-size: 80%;
+}

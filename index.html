@@ -1,92 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 
 <head>
-  <!-- gerekli meta tagları başlangıç -->
-  <meta charset="utf-8">
-  <meta name="author" content="Ali Gel">
-  <!-- gerekli meta tagları bitiş -->
+    <!-- gerekli meta tagları başlangıç -->
+    <meta charset="utf-8">
+    <meta name="author" content="Ali Gel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- gerekli meta tagları bitiş -->
 
-  <!-- opsiyonel meta tagları başlangıç -->
-  <meta name="description" content="Lezzet Durağı Web Sitesi">
-  <meta name="keywords" content="yemek, lezzet, tatlı, temiz, güleryüz">
-  <!-- opsiyonel meta tagları bitiş -->
+    <!-- opsiyonel meta tagları başlangıç -->
+    <meta name="description" content="Lezzet Durağı Web Sitesi">
+    <meta name="keywords" content="yemek, lezzet, tatlı, temiz, güleryüz">
+    <!-- opsiyonel meta tagları bitiş -->
 
-  <title>Lezzet Durağı</title>
+    <title>Lezzet Durağı</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <a href="index.html">
-      <img src="assets/img/logo.png" alt="Lezzet Durağı">
-    </a>
-  </header>
+    <header>
+        <a href="index.html">
+            <img src="assets/img/logo.png" alt="Lezzet Durağı">
+        </a>
+    </header>
 
-  <nav>
-    <a href="blog/yazi.html">İlk Yazı</a>
-  </nav>
+    <nav class="site-nav">
+        <div class="kapsayici">
+            <a class="secili" href="index.html">Ana Sayfa</a>
+            <a href="blog/yazi.html">İlk Yazı</a>
+        </div>
+    </nav>
 
-  <!-- banner başlanıcı -->
-  <section>
-    <div>
-      <h1>Lezzet Durağı</h1>
-      <p>1870 den beri doğal lezzetler</p>
+
+
+    <!-- banner başlanıcı -->
+    <section class="banner">
+        <div>
+            <h1 class="banner-baslik">Lezzet Durağı</h1>
+            <p class="banner-slogan">1870 den beri doğal lezzetler</p>
+        </div>
+    </section>
+    <!-- banner bitişi -->
+
+    <!-- yemeklerimiz başlangıç -->
+    <div class="yemekler">
+        <div class="kapsayici cf">
+            <section class="yemek">
+                <h2>Tarhana Çorbası</h2>
+                <figure>
+                    <img src="assets/img/y2.jpg" width=450 height=300 alt="Tarhana Çorbası">
+                    <figcaption>Resim 1 : Tarhana Çorbası</figcaption>
+                </figure>
+            </section>
+
+            <section class="yemek">
+                <h2>Kuzu Kebap</h2>
+                <figure>
+                    <img src="assets/img/y1.jpg" width=450 height=300 alt="Kuzu Kebap">
+                    <figcaption>Resim 2 : Kuzu Kebap</figcaption>
+                </figure>
+            </section>
+        </div>
     </div>
-  </section>
-  <!-- banner bitişi -->
+    <!-- yemeklerimiz bitiş -->
 
-  <!-- yemeklerimiz başlangıç -->
-<section>
-  <h2>Tarhana Çorbası</h2>
-  <figure>
-    <img src="assets/img/y2.jpg" width=450 height=300 alt="Tarhana Çorbası">
-    <figcaption>Resim 1 : Tarhana Çorbası</figcaption>
-  </figure>
-</section>
+    <!-- sipariş başlangıç -->
+    <div class="siparis">
+        <div class="kapsayici">
+            <h3 class="siparis-baslik">Sipariş Verin</h3>
+            <form action="index.html" method="post">
+                <div class="form-bolumu cf">
+                    <div class="form-sol saga-dayali">
+                        <label>Ad Soyad : </label>
+                    </div>
+                    <div class="form-sag">
+                        <input type="text" name="isim" placeholder="isim">
+                    </div>
+                </div>
 
-<section>
-  <h2>Kuzu Kebap</h2>
-  <figure>
-    <img src="assets/img/y1.jpg" width=450 height=300 alt="Kuzu Kebap">
-    <figcaption>Resim 2 : Kuzu Kebap</figcaption>
-  </figure>
-</section>
-  <!-- yemeklerimiz bitiş -->
+                <div class="form-bolumu cf">
+                    <div class="form-sol saga-dayali">
+                        <label>Telefon : </label>
+                    </div>
+                    <div class="form-sag">
+                        <input type="number" name="tel" placeholder="Telefon Numaranızı Giriniz">
+                    </div>
+                </div>
 
-<!-- sipariş başlangıç -->
-<h3>Sipariş Verin</h3>
-<form action="index.html" method="post">
-  <input type="text" name="isim" placeholder="Buraya İsminizi Giriniz">
-  <input type="number" name="tel" placeholder="Telefon Numaranızı Giriniz">
+                <div class="form-bolumu cf">
+                    <div class="form-sol saga-dayali">
+                        <label>Yemek Seçimleriniz :</label>
+                    </div>
+                    <div class="form-sag">
+                        <label>
+          Tarhana Çorbası <input type="checkbox" name="corba" value="tarhana">
+        </label>
+                        <label>
+          Kuzu Kebap <input type="checkbox" name="sicak" value="kuzu" checked>
+        </label>
+                    </div>
+                </div>
 
-<br>
-<br>
-  Tarhana Çorbası <input type="checkbox" name="corba" value="tarhana">
-  Kuzu Kebap <input type="checkbox" name="sicak" value="kuzu" checked>
+                <div class="form-bolumu cf">
+                    <div class="form-sol saga-dayali">
+                        <label>Ayran Olsun mu?</label>
+                    </div>
+                    <div class="form-sag">
+                        <label>
+          Evet <input type="radio" name="ayran" value="evet" checked>
+        </label>
+                        <label>
+          Hayır <input type="radio" name="ayran" value="hayir">
+        </label>
+                    </div>
+                </div>
 
-  <br><br>
+                <div class="form-bolumu cf">
+                    <div class="form-sol saga-dayali">
+                        <label>Adres ve Özel İstekleriniz : </label>
+                    </div>
+                    <div class="form-sag">
+                        <textarea name="mesaj" rows="8"></textarea>
+                    </div>
+                </div>
 
-  Ayran Olsun mu?
-<br>
-  <input type="radio" name="ayran" value="evet" checked>Evet
-  <br>
-  <input type="radio" name="ayran" value="hayir">Hayır
+                <div class="form-bolumu saga-dayali">
+                    <button class="button" type="reset" name="button">SİPARİŞİ SİL</button>
+                    <button class="button siparis-button" type="submit" name="button">SİPARİŞ VER</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
-  <br>
-  <br>
-  <textarea name="mesaj" rows="8" cols="80">
-Özel İstekleriniz
-  </textarea>
-  <button type="submit" name="button">SİPARİŞ VER</button>
-  <button type="reset" name="button">SİPARİŞİ SİL</button>
-</form>
-<br><br><br>
-<!-- sipariş bitiş -->
+    <!-- sipariş bitiş -->
 
-  <footer>
-    Copyright &copy; 2017 Lezzet Durağı. Her hakkı mahfuzdur.
-  </footer>
+    <footer class="site-sonu">
+        Copyright &copy; 2017 Lezzet Durağı. Her hakkı mahfuzdur.
+    </footer>
 
 </body>
 
